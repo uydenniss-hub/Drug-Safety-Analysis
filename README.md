@@ -27,9 +27,18 @@ The main objective is to test whether the treatment is associated with higher ad
 ---
 
 ## 📈 Results (Example Output)
-- **Adverse effects proportion test:** *p = 0.964 → Fail to reject H₀*  
-- **Chi-square test (num_effects):** *p ≈ [insert]*  
-- **Welch’s t-test (age):** *p ≈ [insert]*  
+- **[Q1] Adverse Effects (Two-proportion z-test)**  
+  p-value = **0.963933** → Fail to reject H₀.  
+  ➝ No statistically significant difference in adverse effect rates between Drug and Placebo groups.
+
+- **[Q2] Number of Adverse Effects (Chi-square test)**  
+  p-value = **0.615012** → Fail to reject H₀.  
+  ➝ The number of adverse effects is independent of treatment assignment.
+
+- **[Q3] Age Distribution (Welch’s t-test)**  
+  p-value = **0.140314** → Fail to reject H₀.  
+  ➝ No statistically significant difference in mean ages between Drug and Placebo groups.
+
 
 Interpretation: No statistically significant differences were found in adverse effect rates or participant ages between Drug and Placebo groups.
 
